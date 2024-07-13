@@ -1,0 +1,482 @@
+h1{
+  display: flex;
+  text-align: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #CBFB62; 
+  color: white; /* White text color */
+}
+.nav ul li {
+  margin-right: 20px; /* Adjust spacing between menu items */
+  border: #000000;
+  font-size: larger;
+  font: bolder;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #333; /* Link color */
+  padding: 10px 15px;
+  display: block;
+}
+.nav ul li:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transform: translateY(-4px); /* Lift the element on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.nav ul li.active {
+  font-weight: bold; /* Example: Highlight active tab */
+}
+
+.nav ul li.active a {
+  color: #007bff; /* Example: Active tab color */
+}
+
+
+.logo {
+  margin-right: auto;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 12%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from header */
+}
+
+/* Active tab styling (optional) */
+.nav li.active {
+  font-weight: bold;
+}
+
+/* Additional styling options (optional) */
+/* .home-container {
+  /* Style the entire home container */
+
+
+/* .content {
+  /* Style the content area */
+
+ 
+    .customer-table {
+      table-layout: fixed;
+      border-collapse: collapse; /* Remove space between table cells */
+      width: 100%;
+      /* margin-left: 20px 5px ; */
+    }
+    
+    .customer-table th,
+    .customer-table td {
+      border: 1px solid #ddd; /* Add borders to table cells */
+      padding: 8px; /* Add padding to table cells */
+      text-align: center; /* Align text left within cells */
+      font-size: 8px; /* Adjust font size as needed */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    }
+    
+    .customer-table th {
+      background-color: #f2f2f2; /* Light gray background for headers */
+      font-weight: bold; /* Bold text for headers */
+    }
+    
+    .customer-table tr:nth-child(even) {
+      background-color: #f9f9f9; /* Light background color for even rows */
+    }
+    
+
+
+    .customer-table-container {
+      display:flex  ; /* Make container a flexbox for better layout */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Align buttons to the right */
+      /* margin: 0 20px; */
+      
+      width: 100%;
+    }
+    
+    .customer-table tbody tr:hover {
+      background-color: #ddd;
+    }
+  
+    
+    .button-container {
+      display: flex; /* Make buttons a row within the flexbox */
+      margin-top: 10px; /* Add some space above the buttons */
+      justify-content: flex-end; /* Align buttons to the right */
+    }
+    
+    .button-container button {
+      margin-left: 10px; 
+      /* padding: 5px 10px;  */
+      border: 1px solid #000000; /* Add border to buttons */
+      border-radius: 3px; /* Add rounded corners */
+      cursor: pointer; /* Indicate clickable buttons */
+    }
+    
+    .button-container button:disabled {
+      opacity: 0.5; /* Disable button appearance when inactive */
+      cursor: default; /* Remove pointer indication */
+    }
+    
+
+    .Select-Month{
+      margin-right: 10px;
+    }
+
+
+
+    .LOAD{
+      margin-left: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    .nach-summary-container {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 50px;
+      width: 40%; /* Adjust as needed */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .nach-summary-container:hover {
+      transform: translateY(-5px); /* Raise the card on hover */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a larger shadow */
+    }
+    
+    .nach-summary-container h2 {
+      margin-bottom: 10px; /* Space below heading */
+      font-size: 18px;
+    }
+    .nach-summary-container h1,
+.nach-summary-container h2 {
+  margin-bottom: 10px;
+}
+
+.nach-summary-cards {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .nach-summary-card {
+      display: flex;
+      justify-content: space-between; /* Distribute counts equally */
+      padding: 10px;
+    }
+    
+    
+    .nach-count {
+      text-align: center;
+    }
+    
+    .nach-count p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    .nach-count span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+    .nach-summary-wrapper {
+      display: flex;
+      justify-content: space-between; /* Align items with space between */
+      margin-top: 20px; /* Adjust as needed */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .total-amount-fail-count {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .total-amount,
+    .total-fail {
+      margin-right: 10px; /* Optional spacing between elements */
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .buttons-container {
+      margin-bottom: 10px;
+    }
+    
+    .buttons-container button {
+      /* margin-right: 10px;
+      padding: 5px 10px;
+    
+      color: rgb(255, 255, 255);
+      
+      cursor:pointer; */
+      padding: 8px 16px;
+      background-color: rgb(90, 110, 236);
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .buttons-container button:disabled {
+      background-color: rgb(90, 110, 236);
+      cursor: not-allowed;
+      padding: 10px;
+      
+      /* border-radius: 10%; */
+    }
+    button{
+      background-color: rgb(90, 110, 236);
+      padding: 5px 10px;
+      border-radius: 10%;
+      border: none;
+      margin-top: 10px;
+      margin: 10px;
+
+    }
+    
+
+    
+    .buttons-container button:hover {
+      background-color: #007bff; /* Change background color on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+      padding: 10px 20px;
+      
+    }
+    
+    .buttons-container button:disabled {
+      background-color: rgb(90, 110, 236);
+      cursor: not-allowed;
+      padding: 10px;
+    }
+    .customer-table {
+      /* width: 100%; */
+      border-collapse: collapse;
+    }
+    
+    .customer-table th,
+    .customer-table td {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+    
+    .customer-table th {
+      background-color: #f2f2f2;
+    }
+    
+    .customer-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .customer-table tr:hover {
+      background-color: #ddd;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Add your CSS specific to the home page here */
+
+/* Style the entire home container */
+.home-container {
+  font-family: Arial, sans-serif; /* Set font family */
+}
+
+/* Style the header */
+
+
+/* Logo styling */
+.logo img {
+  max-width: 100px; /* Set maximum width for the logo */
+}
+
+/* Navigation styling */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from header */
+}
+
+/* Active tab styling */
+.nav li.active {
+  font-weight: bold;
+}
+
+/* Nach summary container */
+.nach-summary-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  width: 40%; /* Adjust width as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for nach summary container */
+.nach-summary-container:hover {
+  transform: translateY(-5px); /* Raise the card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a larger shadow */
+}
+
+/* Nach count styling */
+.nach-count {
+  text-align: center;
+}
+
+.nach-count p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.nach-count span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Additional styling options */
+/* Add your custom styles here */
+/* Fade-in animation for content */
+.content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content.loaded {
+  opacity: 1;
+}
